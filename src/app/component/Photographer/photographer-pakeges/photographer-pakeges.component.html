@@ -1,0 +1,172 @@
+<div class="flex">
+    <app-photographer-side-navbar></app-photographer-side-navbar>
+    <div>
+        <app-photographer-top-navbar></app-photographer-top-navbar>
+        <div style="text-align: center;">
+        <h1>Pakeges</h1>
+    </div>
+    <div class="flex" style="gap: 2rem;">
+        <div>
+        <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md" style="margin-left: 20px;">
+          <select id="country" name="country" autocomplete="country-name" class="  block flex-1  py-0 pl-1 cv text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+              <option>Choose Your Search type</option>
+              <option>Users User Name</option>
+              <option>User ID</option>
+            </select>
+        </div>
+        </div>
+    <form class="search-form">
+        <input class="search-input" type="text" placeholder="Enter your catogory">
+        <button class="search-button" type="submit">Search</button>
+    </form>
+ </div>
+   
+        <div class="flex">
+            <div class="cc sm:col-span-4" style="margin-bottom: 30px;margin-left: 20px;">
+                <label for="username" class="block text-sm font-medium leading-6 text-gray-900">States : </label>
+                <div class="mt-2 flex">
+                    <label for="user name output" class="out-put " >{{Pakeges.commonStatus}}</label>
+                </div>
+               
+            </div>
+            <div class="group">
+            <button type="button" class="btn btn3 btn-danger"  (click)="onDelete() " >Delete Pakege </button>
+
+            <h2> Add Pakeges</h2>
+            </div>
+
+        </div>
+        <div class="flex">
+    <div>
+    <div class="cards__card card " style="margin-left: 20px;">
+        <h2 class="card__heading">{{Pakeges.pakegeName}}</h2>
+
+        
+        <p class="card__price">{{Pakeges.pakegePrice}}</p>
+        <ul role="list" class="card__bullets flow">
+          <li>{{Pakeges.paragraph1}}</li>
+          <li>{{Pakeges.paragraph2}}</li>
+          <li>{{Pakeges.paragraph3}}</li>
+          <li>{{Pakeges.paragraph4}}</li>
+          <li>{{Pakeges.paragraph5}}</li>
+        </ul>
+        <h6><label>Pakege Code :</label> {{Pakeges.pakegeCode}}</h6>
+      </div>
+    </div>
+  
+   <form class="corner">
+    <div style="display: flex;">
+      <div class="sm:col-span-4 part1">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Pakege Name :</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="pakegeName" id="username" autocomplete="username" [(ngModel)]="Pakeges.pakegeName"   class="  size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" >
+          </div>
+        </div>
+      </div>
+      <div class="sm:col-span-4 parts">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Pakege Code :</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="pakegeCode" id="username" [(ngModel)]="Pakeges.pakegeCode" autocomplete="username" class=" size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <div style="display: flex; margin-top: 2rem;">
+      <div class="sm:col-span-4 part1">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Pakege Price :</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="pakegePrice" id="username" [(ngModel)]="Pakeges.pakegePrice" autocomplete="username" class="  size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+      <div class="sm:col-span-4 parts">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Paragraph 1</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="paragraph1" id="username" [(ngModel)]="Pakeges.paragraph1" autocomplete="username" class=" size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="display: flex; margin-top: 2rem;">
+      <div class="sm:col-span-4 part1">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Paragraph 2</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="paragraph2" id="username" [(ngModel)]="Pakeges.paragraph2" autocomplete="username" class="  size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+      <div class="sm:col-span-4 parts">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Paragraph 3</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="paragraph3" id="username" autocomplete="username" [(ngModel)]="Pakeges.paragraph3"  class=" size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="display: flex; margin-top: 2rem;">
+      <div class="sm:col-span-4 part1">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Paragraph 4</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="paragraph4" id="username" [(ngModel)]="Pakeges.paragraph4"  autocomplete="username" class="  size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+      <div class="sm:col-span-4 parts">
+        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Paragraph 5</label>
+        <div class="mt-2">
+          <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+            <input type="text" name="paragraph5" id="username" [(ngModel)]="Pakeges.paragraph5"  autocomplete="username" class=" size-inputs block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="vb">
+    <button type="button" class="btn  btn-secondary" (click)="onUpdate()">Update Pakege</button>
+
+    <button type="button"  class="btn b3  btn-primary" (click)="onSubmit()">Add Pakege</button>
+    </div>
+   </form>
+
+
+    </div>
+
+    <table class="table" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">bookingID</th>
+          <th scope="col">userName</th>
+          <th scope="col">dates</th>
+          <th scope="col">shootTimeDuration</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let x of PakegeDetails ; index as i">
+          <th scope="row">{{i+1}}</th>
+          <td>{{x.pakegeCode}}</td>
+          <td>{{x.pakegeName}}</td>
+          <td>{{x.pakegeCode}}</td>
+          <td>{{x.pakegePrice}}</td>
+          <td><button class="btn btn-primary" (click)="onViewBtn(x,i)">view</button></td>
+          
+        </tr>
+        
+    
+      </tbody>
+    </table>
+
+    </div>
+    </div>

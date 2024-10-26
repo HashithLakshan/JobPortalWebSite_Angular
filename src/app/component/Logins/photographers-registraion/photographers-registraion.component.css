@@ -1,0 +1,22 @@
+.heading{
+    text-align: center;
+    font-size: 60px;
+    height: 100px;
+    width: auto;
+    padding-top: 19px;
+    /* margin-top: 20px; */
+}
+.right-form{
+    height: 690px;
+    width: 600px;
+    padding-left: 50px;
+    
+}
+.left-form{
+    height: 630px;
+    width: 600px;
+  
+}
+.empty{
+    padding-top: 50px;
+}

@@ -1,0 +1,187 @@
+
+<div class="flex">
+    <app-photographer-side-navbar></app-photographer-side-navbar>
+    <div>
+      <app-photographer-top-navbar></app-photographer-top-navbar>
+     <div>
+        <div class="flex" style="gap: 2rem;">
+            <div>
+            <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+              <select id="country" [(ngModel)]="searchValue" name="searchValue" autocomplete="country-name" class="  block flex-1  py-0 pl-1 cv text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                  <option value="empty">Choose Your Search type</option>
+                  <option value="user">Users User Name</option>
+                  <option value="ID">User ID</option>
+                </select>
+            </div>
+            </div>
+        <form class="search-form">
+            <input class="search-input" type="text" [(ngModel)]="searchInput" name="searchInput" placeholder="Enter your catogory">
+            <button class="search-button" type="submit" (click)="onSearch()">Search</button>
+          </form>
+          <h1 class="head-user">Replying Users</h1>
+     </div>
+     <div class="right-side">
+     <div>
+<!-- type here break section -->
+<div class="details-main" >
+    <div class="side-texts">
+        <div class="cb sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">User ID No
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userID}}</label>
+            </div>
+        </div>
+        <div class=" cc sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">First Name
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userFirstName}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- second details feeld -->
+<div class="details-main" >
+    <div class="side-texts">
+        <div class="cb sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Last Name
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userLstName}}</label>
+            </div>
+        </div>
+        <div class=" cc sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Email Address
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userEmail}}</label>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3rd feeld -->
+<div class="details-main" >
+    <div class="side-texts">
+        <div class="cb sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">User Name
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userName}}</label>
+            </div>
+        </div>
+    
+    </div>
+    <div class="side-texts">
+        <div class="cb sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Contact No
+                :</label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.userContactNumber}}</label>
+            </div>
+        </div>
+    
+    </div>
+    
+</div>
+<div class="details-main" >
+    <div class="side-texts">
+<div class="cb sm:col-span-4">
+    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Status
+        :</label>
+    <div class="mt-2 flex">
+        <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.userDto?.commonStatus}}</label>
+    </div>
+</div>
+<div class="cb sm:col-span-4">
+    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Replying this message
+        :</label>
+    <div class="mt-2 flex">
+        <label for="user name output" class="out-put ">{{photographerToUserFeedbacks.replingUserToPhotographer}}</label>
+    </div>
+</div>
+
+    </div>
+</div>
+<!-- 4th field -->
+<div class="details-main" >
+    <div class="side-texts">
+<div class="cc sm:col-span-4">
+    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">User Inquery : </label>
+    <div class="mt-2 flex">
+        <label for="user name output" class="out-put1 "> <h6>{{photographerToUserFeedbacks.utoPSubject}}</h6><p>{{photographerToUserFeedbacks.utoPDiscription}}</p></label>
+    </div>
+</div>
+     
+     <div>
+        <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+          <select id="country" autocomplete="country-name"(change)="onDropdownChange($event)"  class=" block flex-1  py-0 pl-1 cv text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+            <option>Choose Feedback ID</option>
+            <option *ngFor="let x of feedabacksDetails" [value]="x.utoPFeedbackID"  >Feedback ID NO:{{x.utoPFeedbackID}}  </option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-danger" (click)="onDelete()" style="margin-top: 50px;">Delete Inquery !</button>
+     </div>
+    </div>
+   
+</div>
+     </div>
+<!-- corner text fields -->
+<div class="border-forms">
+    <form>
+      <div style="margin-top: 0px;">
+        <div class="sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Subject : </label>
+            <div class="mt-2 flex">
+                <label for="user name output" class="out-put5 "> <h6>
+                   {{photographerToUserFeedbacks.utoPSubject}}</h6></label>
+            </div>
+        </div>
+      </div>
+      <div style="margin-top: 20px;">
+        <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Discription :</label>
+        <div class="mt-2">
+          <textarea id="about" name="about" rows="7" class="block w-full  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn3 btn-warning">Send Feedback</button>
+
+    </form>
+ 
+
+
+</div>
+
+
+     </div>
+     </div>
+     <table class="table" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">userName</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Discription</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let x of feedabacksDetails; index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{x.utoPFeedbackID}}</td>
+            <td>{{userDetailsDto[i].userName}}</td>
+            <td>{{x.utoPSubject}}</td>
+            <td>{{x.utoPDiscription}}</td>
+            <td><button class="btn btn-primary" (click)="onViewBtn(x,i)">view</button>
+                <button class="btn ll btn-danger" (click)="onDeleteTable(x.utoPFeedbackID)">Delete</button></td>
+            
+          </tr>
+          
+      
+        </tbody>
+      </table>
+</div>
+ </div>
+    
+

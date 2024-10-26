@@ -1,0 +1,122 @@
+
+<app-navibar1></app-navibar1>
+<app-navibar2></app-navibar2>
+<div class="bg-blue-50">
+<section class="page-section" id="about" >
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">How to Hire A Your Photographer </h2>
+            <h3 class="section-subheading text-muted">Put your phone away and be fully present during your best moment. Learn how to book a photographer to help capture your next trip.
+            </h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/paper-plane.png" alt="" width="80px" alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1 class="subheading">Inquire for Your Dates</h1>
+                    </div>
+                    <div class="para"><p class="text-muted">Fill out a quick form check availability for your travel dates with photographers in any of our catogories </p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/register.png" alt="" width="80px"  alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1 class="subheading">Choose Your Photographer</h1>
+                    </div>
+                    <div class="para"><p class="text-muted">Within 24-48 hours, we will let you know which photographers are available for your dates.</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/pencil.png" alt="" width="80px"  alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1>Book Your Shoot</h1>
+                    </div> 
+                    <div class="para"><p class="text-muted">Tell us your shoot preferences, such as ‘must have’ photos and preferred time of day. At this step you’ll pay, and your date is officially reserved with your photographer.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/comment.png" alt="" width="80px"  alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1 class="subheading">Plan the Details</h1>
+                    </div>
+                    <div class="para"><p>Collaborate directly with your photographer to finalize the start time and photo route. You will receive their phone number for any last minute changes.</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/paper-plane.png" alt="" width="80px" alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1 class="subheading">Shoot Day!</h1>
+                    </div>
+                    <div class="para"><p class="text-muted">It’s all about having FUN during your vacation photo session! Enjoy roaming the city while we capture your travel story.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="/assets/register.png" alt="" width="80px"  alt="..."></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h1 class="subheading">Love Your Wonderful Day Photos</h1>
+                    </div>
+                    <div class="para"><p class="text-muted">Within 5 working days, you will get a link to your private gallery with all the best shots from your shoot. Pick your favorite photos to download and the memories are yours to treasure forever. Photos are edited & high-res.
+
+                    </p></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="line">
+  <div class="cotactheader ">  Contact Me </div>
+</div>
+<div class="back ">
+   <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="isolate bg-white py-20 lg:px-8">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+      <div class="" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  
+    <form action="#" method="POST" class="   mx-auto grid   gap-x-8 lg:max-w-none lg:grid-cols-2">
+        <div class="photo">
+        <img src="/assets/asitha.png" height="700px" width="400px">
+        </div>
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+
+        <div class="sm:col-span-2">
+            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Subject</label>
+            <div class="mt-2.5">
+              <input type="text" name="userSubject" id="company"[(ngModel)]="userFeedbacks.userSubject" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+        <div class="sm:col-span-2">
+          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+          <div class="mt-2.5">
+            <textarea name="userDiscription" [(ngModel)]="userFeedbacks.userDiscription" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+          </div>
+        </div>
+        <button type="submit" (click)="onSubmit()" class=" bis  block w-full rounded-md bg-indigo-600  py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+      </div>
+      
+      
+      
+    </form>
+  </div>
+  
+</div>
+<app-footer></app-footer>

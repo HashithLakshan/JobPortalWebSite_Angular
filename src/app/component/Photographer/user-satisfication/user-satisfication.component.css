@@ -1,0 +1,38 @@
+.top-headings{
+    text-align: center;
+}
+.vb{
+    font-size: 20px;
+    margin-left: 100px;
+  }
+  .hes{
+    position: relative;
+    margin-left: 50px;
+    padding-bottom: 30px;
+  }
+  .search-button {
+    border-radius: 0 7px 7px 0;
+    background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-input {
+  border-radius: 7px 0 0 7px;
+  width: 300px;
+  flex: 1;
+  padding: 10px;
+  /* border: 1px solid black; */
+  outline: none;
+}
+.cv{
+    height: 35px;
+    width: 300px; 
+  }
+  .btn2{
+    height: 40px;
+    margin-top:30px ;
+    margin-left: 900px;
+  }

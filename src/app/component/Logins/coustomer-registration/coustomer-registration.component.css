@@ -1,0 +1,63 @@
+
+.heading{
+    padding-left: 250px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.lab{
+
+    left: 1000px
+}
+.ins{
+    position: relative;
+    height: 40px;
+    width: 450px;
+    padding-left: 20px;
+}
+.last{
+    position: relative;
+    right: 40px;
+}
+.inst{
+    position: relative;
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.space{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.bz{
+    width: 100px;
+}
+.none{
+    padding-bottom: 100px;
+}
+.dd{
+    height: 100%;
+    width:fit-content;
+}
+.pa{
+    padding-left: 20px;
+}
+.formleft{
+    display: flex;
+}
+.img{
+    padding-right: 30px;
+}
+.hi{
+    position: relative;
+    left :230px
+}
+.gg{
+    gap: 2rem;;
+    position: relative;
+    right: 190px;
+}
+.mkk{
+    margin-left: 200px;
+}

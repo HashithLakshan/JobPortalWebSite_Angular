@@ -1,0 +1,168 @@
+<div class="profile bg-blue-50">
+  
+    <div class="profile-banner bg-blue-50">
+      
+    </div>
+    <div class="top">
+    <div class="profile-picture bg-blue-50">
+      <a href=""><img src="/assets/photographer.png"></a>
+      <div class="buttons">
+      <span>Daniel Jack</span>
+      <br>
+      <small>(Jack Daniel)</small>
+    </div>
+    </div>
+    <button type="button" class="btn btn1 btn-info" (click)="GalleryNavigationButton()">Gallary</button>
+    </div>
+    <div class="secnd flex ">
+<div class="profile-picture2 ">
+    <a href=""><img src="/assets/photo.png"></a>
+        <div class="space ">
+    <h1>Hi I'm Hasith Lakshan</h1>
+        <h1 style="margin-left: 90px;">Your Photographer</h1>
+        </div>
+    <button type="button" class="btn btn-primary" (click)="BookingPhotographerNavigate()">Book Now !</button>
+  </div>
+    </div>
+    <p class="para">I am Orlando, passionate about movies, good music, travel, gastronomy and enjoying days with my
+        little daughter. Being able to talk about oneself is always complicated, but in order to talk 
+        about ourselves we think we need to talk a little about our photography, not about how our 
+        photos are, but how we feel it. Everything that surrounds me inspires me, having the opportunity
+         to create memories for people makes me very happy. I am a wedding photographer in Barcelona 
+         with extensive
+        experience with portrait, family or lifestyle photography. Let's create something great.</p>
+        <main class="main flow">
+            <h1 class="main__heading">Pakeges</h1>
+            <div class="CC   grid max-w-2xl       sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              
+               
+      
+           
+          
+                <div class="cards__card card ">
+                  <h2 class="card__heading">ID.PAK1</h2>
+                  <p class="card__price">$29.99</p>
+                  <ul role="list" class="card__bullets flow">
+                    <li>Access to all premium workouts and nutrition plans</li>
+                    <li>24/7 Priority support</li>
+                    <li>1-on-1 virtual coaching session every month</li>
+                    <li>Exclusive content and early access to new features</li>
+                  </ul>
+                  <a routerLink="/booking" class="card__cta cta ">Book Now !</a>
+                </div>
+              
+                  
+            
+              
+              
+            </div>
+            
+          </main>
+          <div class="review">
+<h1 style="padding-left: 150px;">My Happy Coustomer Reviews</h1>
+<div class="border-blue-200">
+<div class="review_sections flex" style="text-align: center;padding-top: 50px;">
+<img src="/assets/photo.png" width="200px" height="200px" style="margin-left:150px;">
+<div>
+  <h4 class="hes">Hasith Lakshan</h4>
+<p class="vb">  Awesome photographer!! He was extremely 
+    friendly and helpful when doing the shoot. Orlando also brought along his beautiful 
+    family and made the occasion that much more special. The pictures also turned out amazing 
+    and beautiful. -Benjamin</p>
+</div>
+</div>
+          </div>
+          <section class="contact-page-sec">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="contact-info">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-map-marked"></i>
+                      </div>
+                      <div class="contact-info-text">
+                        <img src="/assets/contact (3).png" alt="" width="70px" style="margin-left: 175px;padding-bottom: 20px;">                 
+                        <h2>Location</h2>
+                        <span>Gampaha </span> 
+                      </div>
+                    </div>            
+                  </div>          
+                </div>          
+                <div class="col-md-4">
+                  <div class="contact-info">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="contact-info-text">
+                        <img src="/assets/contact (2).png" alt="" width="70px" style="margin-left: 175px;padding-bottom: 20px;"> 
+                        <h2>E-mail</h2>
+                        <!-- <span>info@LoremIpsum.com</span>  -->
+                         <!-- i comment this cheack plz -->
+
+
+
+
+
+                      </div>
+                    </div>            
+                  </div>                
+                </div>                
+                <div class="col-md-4">
+                  <div class="contact-info">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-clock"></i>
+                      </div>
+                      <div class="contact-info-text">
+                        <img src="/assets/contact.png" alt="" width="70px" style="margin-left: 175px;padding-bottom: 20px;"> 
+                        <h2>Contct Number</h2>
+                        <span>076 6351 246</span>
+                     
+                      </div>
+                    </div>            
+                  </div>          
+                </div>          
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="contact-page-form" style="margin-top: 200px;" method="post">
+                    <h2>Get in Touch</h2> 
+                    <form action="contact-mail.php" method="post">
+                      <div class="row">
+                          <div  style="display: flex;">                     
+                      <div class="col-md-6 col-sm-6 col-xs-12 ">
+                        <div class="single-input-field ">
+                          <input type="text" [(ngModel)]="photographerToUserFeedbacks.utoPSubject" placeholder="Subject" name="utoPSubject"/>
+                        </div>
+                      </div>  
+                      <select id="country"  autocomplete="country-name" [(ngModel)]="photographerToUserFeedbacks.commonStatus" name="photographerToUserFeedbacks.commonStatus" class=" h-10 border-0 border-yellow-500 block flex-1 border-0  py-0 pl-1 cc text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                        <option>Choose Your Feedback Type</option>
+                        <option value="SATISFIED">Inquery Type</option>
+                        <option  value="NOT_SATISFIED">Satisfication Type</option>
+                      </select>
+
+
+                          </div>
+                      <div class="col-md-12 message-input">
+                        <div class="single-input-field">
+                          <textarea  placeholder="Write Your Message" [(ngModel)]="photographerToUserFeedbacks.utoPDiscription" name="utoPDiscription"></textarea>
+                        </div>
+                      </div>                                                
+                      <div class="single-input-fieldsbtn">
+                        <button type="button" class="btn btn-warning" (click)="onSubmit()">Send Now!</button>                      </div>                          
+                    </div>
+                    </form>   
+                  </div>      
+                </div>
+                <div class="col-md-4">        
+                  <div class="contact-page-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1553497921355" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>          
+                </div>        
+              </div>
+            </div>
+          </section>
+          </div>
+        </div>   

@@ -1,0 +1,106 @@
+.top{
+  
+    height: 650px;
+    width: 1228px;
+  
+}
+.search-button {
+    border-radius: 0 7px 7px 0;
+    background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 300px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.search-form{
+   position: relative;
+   margin-right: 0px;
+}
+.cc{
+  height: 40px;
+  width: 160px;
+}
+.bt{
+  position: relative;
+  margin-left: 0px;
+  margin-right: 50px;
+  height: 40px;
+
+}
+.mm{
+  margin-left: 105px;
+  
+}
+.bb{
+  margin-top: 20px;
+}
+.out-put{
+  height: 40px;
+  width: 350px;
+  
+  padding-top: 8px;
+  padding-left: 12px;
+}
+.out-put1{
+  height: 100px;
+  width: 300px;
+  padding-top: 4px;
+  padding-left: 12px;
+  position: relative;
+  margin-left: 20px;
+  overflow-wrap: break-word;
+
+}
+.big{
+  height: 560px; 
+  width: 350px;
+
+}
+.mc{
+  margin-top: 30px;
+
+}
+.corner{
+
+  height: 600px;
+  width: auto;
+  margin-left: 20px;
+}
+.kk{
+  height: 40px;
+  width: 250px;
+}
+.b1{
+  margin-top: 20px;
+}
+.ct{
+  height: 40px;
+  width: 160px;
+}
+/* .cv{
+    padding-top:20px ;
+    height: 35px;
+    width: 300px; 
+     
+  } */
+  .cvv{
+    padding-top:20px ;
+    height: 35px;
+    width: 250px; 
+     
+  }
+  .b2{
+    margin-left: 50px;
+  }
+  
+
+
+

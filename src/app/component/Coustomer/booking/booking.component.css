@@ -1,0 +1,62 @@
+.colour{
+    margin-top: 50px;
+}
+.letter{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.labeledite{
+    font-size: 25px;
+}
+.form_right{
+    position: relative;
+    padding-top:20px ;
+    height: 250px;
+    width: 450px;
+}
+.spcei{
+    position: relative;
+    padding-top: 60px;
+}
+.full{
+    display: flex;
+    gap: 3rem;
+}
+.cc{
+    padding-top:20px ;
+    height: 35px;
+    width: 450px;  
+}
+.nn{
+    padding-top: 20px;
+}
+.nc{
+    position: relative;
+    padding-top: 48px;
+}
+.form_left{
+    position: relative;
+ 
+}
+.big{
+    width: 950px;
+}
+.names{
+    display: flex;
+    gap: 3rem;
+    padding-top: 10px;
+}
+.input{
+    width: 288px;
+}
+.main{
+    position: relative;
+    padding-left: 200px;
+    padding-top: 5px;
+}
+.button{
+    padding-top: 50px;
+    display: flex;
+    gap: 3rem;
+    
+}

@@ -1,0 +1,84 @@
+.top-header{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search-button {
+    border-radius: 0 7px 7px 0;
+    background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-input {
+  border-radius: 7px 0 0 7px;
+  width: 300px;
+  flex: 1;
+  padding: 10px;
+  /* border: 1px solid black; */
+  outline: none;
+}
+.cv{
+    height: 35px;
+    width: 300px; 
+  }
+  
+
+  .border-forms{
+    margin-left: 300px;
+    margin-top: 40px;
+
+  }
+  .input4{
+    height: 120px;
+    width: 310px;
+    
+  }
+  .btn3{
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+  .out-put5{
+    height: 180px;
+      width: 410px;
+      padding-top: 4px;
+      padding-left: 12px;
+      position: relative;
+      margin-left: 20px;
+      overflow-wrap: break-word;
+      
+  }
+  .word{
+    height: 250px;
+    width: 400px;
+    
+  }
+  .btn5{
+margin-left: 80px;
+height: 40px;
+width: 200px;
+  }
+  .photo{
+    margin-top: 10px;
+  }
+  .full-profile{
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-left: 30px;
+    border: 2px solid blue;
+    border-radius: 10px;
+  }
+  .btn0{
+    margin-top: 20px;
+    margin-left: 80px;
+    height: 40px;
+    width: 200px;
+  }
+  .Paragraph{
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Adjust the number of lines as needed */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
