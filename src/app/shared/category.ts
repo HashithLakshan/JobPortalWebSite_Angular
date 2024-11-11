@@ -1,7 +1,7 @@
 export class Categaroy{
 
-    catogoryName:String = new String();
+    catogoryName?:String;
     catagoryPhoto: any ;
-    catogoryDiscription: String = new String();
-    catogoryID? :number;
+    catogoryDiscription?: String;
+    catogoryID? :String;
 }

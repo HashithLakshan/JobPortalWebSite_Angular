@@ -74,8 +74,8 @@ if(response.status === true){
 }
 
 getAllBookings(){
-  let PhotographerId = sessionStorage.getItem('PhotographerId')
-  console.log('PhotographerId:: '+PhotographerId);
+  let PhotographerId = sessionStorage.getItem('photographerId')
+  console.log('photographerId:: '+PhotographerId);
   
   this.bookingService.getBookingByPhotographerActiveUsers(PhotographerId).subscribe(
     (response)=>{

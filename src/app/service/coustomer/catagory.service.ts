@@ -8,14 +8,12 @@ import { Observable } from 'rxjs';
 export class CatagoryService {
 
 
-  constructor(private _http:HttpClient) { }
+  constructor(private http:HttpClient) { }
+  private apiUrl = 'http://localhost:8080/api/';
 
-  getAllCatagery():Observable<any> {
-    return this._http.get('http://localhost:8080/getAllCatagories');
+  getAllCatogory():Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}catagory/getCatogoryAll`);
   }
-
-
-
 
 
 }

@@ -9,6 +9,7 @@ export class PhotographerProfiles{
 
     catogoryDto?:{
         catogoryID?:string;
+        catogoryName?:String;
     }
     commonStatus?:string;
     officialEmail?:string;

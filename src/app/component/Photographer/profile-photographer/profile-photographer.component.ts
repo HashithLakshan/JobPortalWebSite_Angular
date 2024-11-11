@@ -4,6 +4,9 @@ import { OnInit } from '@angular/core';
 import { PhotographerProfiles } from 'src/app/shared/photographerProfile';
 import { PhotographerProfileService } from 'src/app/service/photographer-profile.service';
 import Swal from 'sweetalert2';
+import { CatagoryService } from 'src/app/service/coustomer/catagory.service';
+import { Categaroy } from 'src/app/shared/category';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-profile-photographer',
@@ -22,7 +25,8 @@ export class ProfilePhotographerComponent  implements OnInit {
     profileNikeName:'',
     profileName: '',
     catogoryDto:{
-        catogoryID:'1'
+        catogoryID:'',
+        catogoryName:''
     },
     commonStatus:'ACTIVE',
     officialEmail:'',
@@ -32,9 +36,18 @@ export class ProfilePhotographerComponent  implements OnInit {
         photographerID:''
     }
   };
+  catogorys : Categaroy = {
+     catogoryID:'',
+        catogoryName:'',
+        catagoryPhoto:''
+  };
+  selectedCategory: string = '';
+catagory : Categaroy [] =[];
 
+  constructor(private photographerProfileService: PhotographerProfileService,private router :Router,private catogoryService : CatagoryService){
+   this.getAllCatagory();
 
-  constructor(private photographerProfileService: PhotographerProfileService,private router :Router){}
+  }
 
   ngOnInit(): void {
   }
@@ -45,8 +58,30 @@ export class ProfilePhotographerComponent  implements OnInit {
   }
 
 
+  getAllCatagory(){
+this.catogoryService.getAllCatogory().subscribe(
+  (response)=>{
+// this.catagory=response.payload[0];
+this.catagory = response.payload[0];
+this.catogorys = this.catagory[0];
+
+  }
+);
+
+
+  }
+
+
+   onDropdownChange(event : any){
+    const selectedValue = event.target.value;
+      this.selectedCategory = selectedValue;
+   
+  }
+
   onSubmit():void{
-    console.log('im here!!!');
+  
+   
+
   //  *************************** catagery drop down inculded ***********************************
        this.photographerProfiles.profileID =this.getRandomArbitrary(10,50).toString();
     console.log(this.photographerProfiles);
@@ -54,6 +89,14 @@ let PhotographerID = sessionStorage.getItem('photographerID');
 if(PhotographerID){
   this.photographerProfiles.photographerDto = this.photographerProfiles.photographerDto || {};
   this.photographerProfiles.photographerDto.photographerID = PhotographerID;
+  this.photographerProfiles.catogoryDto = this.photographerProfiles.catogoryDto || {};
+  this.photographerProfiles.catogoryDto.catogoryID = this.selectedCategory;
+  console.log(this.selectedCategory)
+  console.log(this.photographerProfiles);
+  if(this.selectedCategory){
+
+    
+  
 
     this.photographerProfileService.registerProfiles(this.photographerProfiles).subscribe(
       (response)=>{
@@ -68,9 +111,12 @@ if(PhotographerID){
       
       }
     )
-  }
-  }
+  }else{
+    Swal.fire ('','Select your Official Job title','info');
 
+  }
+  }
+  }
   submitOtherData(data:any){
     console.log(data.payload[0].profileID);
     const paylord = {

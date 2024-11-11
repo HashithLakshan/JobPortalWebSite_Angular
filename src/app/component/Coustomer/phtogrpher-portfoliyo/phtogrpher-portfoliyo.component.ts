@@ -54,24 +54,25 @@ photographerToUserFeedbacks : PhotographerToUserFeedbacks = {
   
     this.photographerToUserFeedbacks.photographerDto = this.photographerToUserFeedbacks.photographerDto || {};
     this.photographerToUserFeedbacks.photographerDto.photographerID = Photographer;
-    if(this.photographerToUserFeedbacks.commonStatus != null || this.photographerToUserFeedbacks.commonStatus != ''){
-    this.photographerToUserFeedbacksService.saveFeedbacksUTP(this.photographerToUserFeedbacks).subscribe(
-      
-      (response)=>{
-        console.log(this.photographerToUserFeedbacks.commonStatus)
+    if(this.photographerToUserFeedbacks.commonStatus == null || this.photographerToUserFeedbacks.commonStatus == '' ){
+      Swal.fire('','Select The Selection Type','question')
 
-       if(response.status === true){
-        Swal.fire('',response.commonMessage,'success');
-       }else{
-        for(let y = 0;y<response.errorMessages.length;y++){
-          Swal.fire('',response.errorMessages[y],'question');
-        }
-       }
-      }
-    );
     
     }else{
-      Swal.fire('','Select The Selection Type','question')
+      this.photographerToUserFeedbacksService.saveFeedbacksUTP(this.photographerToUserFeedbacks).subscribe(
+      
+        (response)=>{
+          console.log(this.photographerToUserFeedbacks.commonStatus)
+  
+         if(response.status === true){
+          Swal.fire('',response.commonMessage,'success');
+         }else{
+          for(let y = 0;y<response.errorMessages.length;y++){
+            Swal.fire('',response.errorMessages[y],'question');
+          }
+         }
+        }
+      );
 
 }
   }else{

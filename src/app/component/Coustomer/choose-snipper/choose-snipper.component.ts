@@ -19,7 +19,7 @@ export class ChooseSnipperComponent implements OnInit {
   }
 
   getAllCategory():void{
-    this.categoryService.getAllCatagery().subscribe({
+    this.categoryService.getAllCatogory().subscribe({
       next:(res)=>{
         console.log(res)
         this.catagery = res.payload[0]
